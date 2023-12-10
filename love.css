@@ -152,7 +152,7 @@ margin-left: 123px;
 
 @media screen and (max-width:1000px) {
     body{
-        background-color: gray;
+/*         background-color: gray; */
     }
     nav{
         flex-direction: column;
