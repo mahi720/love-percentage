@@ -18,6 +18,7 @@ body{
     justify-content: center;
     margin: 0;
     font-family: 'Ubuntu',sans-serif;
+    background-size: cover;
 }
 .main-body{
 background-color: linear-gradient(rgba(0,0,0,0.1),rgb(22,122,115));
