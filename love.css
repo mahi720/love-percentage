@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(2, 12, 115, 0.7), rgba(0, 0, 0, 0.3)),
+    url("image/love.jpg") center center/cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-body {
+  background: linear-gradient(
+    135deg,
+    rgba(22, 122, 115, 0.8),
+    rgba(255, 255, 255, 0.1)
+  );
+  padding: 30px 40px;
+  border-radius: 10px;
+}
+
+.container {
+  background: rgba(103, 47, 47, 0.7);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(255, 140, 0, 0.3);
+  width: 500px;
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 24px 16px;
+  background: linear-gradient(90deg, #c7bfbf 60%, #e0dede 100%);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  text-shadow: 2px 2px 0 #d32f2f;
+  letter-spacing: 2px;
+}
+
+.input {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+input {
+  border: 2px solid #f0f0f0;
+  border-radius: 6px;
+  font-family: inherit;
+  padding: 12px;
+  font-size: 1rem;
+  margin: 8px 0;
+  width: 80%;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #655c59;
+  outline: none;
+}
+
+#span1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 8px 0 0 8px;
+  display: block;
+}
+
+.calculate {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.calculate_btn {
+  width: 80%;
+  max-width: 220px;
+  margin: 8px auto;
+  display: block;
+}
+
+button {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #655c59 80%, #d32f2f 100%);
+  margin: 16px auto 0 auto;
+  outline: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  display: block;
+}
+
+button:hover {
+  background: #222;
+  color: #fff;
+}
+
+.answer {
+  margin-top: -44px;
+  margin-left: 80px;
+  position: relative;
+}
+
+.answer img {
+  width: 220px;
+  height: 180px;
+  margin: 0 auto;
+  display: block;
+}
+
+.answer h2 {
+  visibility: hidden;
+  margin-left: -41px;
+  margin-top: 4px;
+}
+
+.heading {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: inherit;
+  text-align: center;
+}
+
+.message {
+  width: 98%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: aqua;
+  margin: 12px 0;
+}
+
+#error {
+  visibility: hidden;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90vw;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  .main-body {
+    padding: 24px 12px;
+  }
+  .answer img {
+    width: 180px;
+    height: 140px;
+  }
+  .heading {
+    font-size: 1.3rem;
+    top: 70px;
+  }
+  .answer h2 {
+    visibility: hidden;
+    margin-left: -33px;
+    margin-top: 4px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 560px) {
+  body {
+    padding: 12px;
+    min-height: 100vh;
+    align-items: flex-start;
+  }
+  .container {
+    width: 98vw;
+    max-width: 340px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.2);
+    margin-top: 24px;
+  }
+  .main-body {
+    padding: 40px 6px;
+  }
+  .header {
+    padding: 16px 8px;
+  }
+  .header h2 {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 0 #d32f2f;
+  }
+  .input {
+    width: 100%;
+    height: auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+  }
+  input {
+    width: 90%;
+    max-width: 220px;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  #span1 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  button {
+    margin-top: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .answer {
+    margin-top: -15px;
+    margin-left: 50px;
+    /* position: relative; */
+  }
+  .answer img {
+    width: 130px;
+    height: 100px;
+    margin: 0 1500px;
+  }
+  .answer h2 {
+    visibility: hidden;
+    margin-left: -25px;
+    margin-top: 12px;
+  }
+  .heading {
+    font-size: 1rem;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .message {
+    font-size: 1rem;
+    margin-left: 29px;
+  }
+}
+
+/* Hide unused image IDs for mobile/tablet */
+#image11,
+#image21 {
+  display: none;
+}
