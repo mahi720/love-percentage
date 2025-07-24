@@ -181,6 +181,9 @@ button:hover {
 }
 
 /* Mobile styles */
+body {
+  overflow: hidden;
+}
 @media screen and (max-width: 560px) {
   body {
     padding: 12px;
@@ -195,7 +198,7 @@ button:hover {
     margin-top: 24px;
   }
   .main-body {
-    padding: 40px 6px;
+    padding: 59px 6px;
   }
   .header {
     padding: 16px 8px;
