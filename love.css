@@ -184,7 +184,7 @@ button:hover {
 body {
   overflow: hidden;
 }
-@media screen and (max-width: 40px) {
+@media screen and (max-width: 100px) {
   body {
     padding: 12px;
     min-height: 100vh;
